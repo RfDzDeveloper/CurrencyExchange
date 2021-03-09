@@ -1,0 +1,12 @@
+/home/redbeardman/Development/C#/ApiBank/Bank/bin/Debug/net5.0/Bank.deps.json
+/home/redbeardman/Development/C#/ApiBank/Bank/bin/Debug/net5.0/Bank.dll
+/home/redbeardman/Development/C#/ApiBank/Bank/bin/Debug/net5.0/ref/Bank.dll
+/home/redbeardman/Development/C#/ApiBank/Bank/bin/Debug/net5.0/Bank.pdb
+/home/redbeardman/Development/C#/ApiBank/Bank/obj/Debug/net5.0/Bank.csprojAssemblyReference.cache
+/home/redbeardman/Development/C#/ApiBank/Bank/obj/Debug/net5.0/Bank.GeneratedMSBuildEditorConfig.editorconfig
+/home/redbeardman/Development/C#/ApiBank/Bank/obj/Debug/net5.0/Bank.AssemblyInfoInputs.cache
+/home/redbeardman/Development/C#/ApiBank/Bank/obj/Debug/net5.0/Bank.AssemblyInfo.cs
+/home/redbeardman/Development/C#/ApiBank/Bank/obj/Debug/net5.0/Bank.csproj.CoreCompileInputs.cache
+/home/redbeardman/Development/C#/ApiBank/Bank/obj/Debug/net5.0/Bank.dll
+/home/redbeardman/Development/C#/ApiBank/Bank/obj/Debug/net5.0/ref/Bank.dll
+/home/redbeardman/Development/C#/ApiBank/Bank/obj/Debug/net5.0/Bank.pdb
