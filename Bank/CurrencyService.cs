@@ -15,16 +15,13 @@ namespace Bank
         
         HttpWebRequest webRequestGBP = (HttpWebRequest)WebRequest.Create(string.Format($"{CurrencyApiGBP}"));
         HttpWebRequest webRequestUSD = (HttpWebRequest)WebRequest.Create(string.Format($"{CurrencyApiUSD}"));
-        HttpWebRequest webRequestEUR = (HttpWebRequest)WebRequest.Create(string.Format($"{CurrencyApiEUR}"));
-        // public List<Root> GetGBPData() => GetCurrencyData(webRequestGBP);         
-        // public List<Root> GetUSDData() => GetCurrencyData(webRequestUSD);           
-        // public List<Root> GetEURData() => GetCurrencyData(webRequestEUR);    
+        HttpWebRequest webRequestEUR = (HttpWebRequest)WebRequest.Create(string.Format($"{CurrencyApiEUR}"));       
 
         public Root GetGBPData() => GetCurrencyData(webRequestGBP);         
-        public Root GetUSDData() => GetCurrencyData(webRequestUSD);           
+        public Root GetUSDData() => GetCurrencyData(webRequestUSD);          
         public Root GetEURData() => GetCurrencyData(webRequestEUR);        
 
-        private Root GetCurrencyData(HttpWebRequest webRequest){
+        public Root GetCurrencyData(HttpWebRequest webRequest){
             webRequest.Method = "GET";
             HttpWebResponse webResponse = (HttpWebResponse)webRequest.GetResponse();
             Console.WriteLine(webResponse.StatusCode);
@@ -40,25 +37,6 @@ namespace Bank
             Console.WriteLine(CurrencyList);
             return CurrencyList;
         }   
-        
-
-        // private List<Root> GetCurrencyData(HttpWebRequest webRequest){
-        //     webRequest.Method = "GET";
-        //     HttpWebResponse webResponse = (HttpWebResponse)webRequest.GetResponse();
-        //     Console.WriteLine(webResponse.StatusCode);
-        //     Console.WriteLine(webResponse.Server);
-        //     string jsonString;
-
-        //     using (Stream stream = webResponse.GetResponseStream()){
-        //         StreamReader reader = new StreamReader(stream, System.Text.Encoding.UTF8);
-        //         jsonString = reader.ReadToEnd();
-        //     }
-
-        //     List<Root> CurrencyList = JsonConvert.DeserializeObject<List<Root>>(jsonString);
-        //     Console.WriteLine(CurrencyList.Count);
-        //     return CurrencyList;
-        // }
-
 
     }
 }
